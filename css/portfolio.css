@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li a {
+    padding: 1rem;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#hero {
+    background: tomato;
+}
+
+#welcome {
+    background: gray;
+}
+
+#about {
+    background: lightsteelblue;
+}
+
+
+
+#contact {
+    background: lightsalmon;
+}
