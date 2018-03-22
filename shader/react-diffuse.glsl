@@ -11,7 +11,7 @@
 
 // Bump mapping function.
 float bumpFunc(vec2 p){
-    return .5 * (texture(iChannel1, p).x + 1.0);
+    return .5 * (texture(iChannel1, p).x + 1.);
 }
 
 void mainImage( out vec4 fragColor, in vec2 fragCoord ){
@@ -69,7 +69,8 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord ){
     vec3 col = (texCol * (diff*vec3(1, .97, .92)*1.3 + 0.5) + vec3(1., 0.6, .2)*spec*1.3)*atten;
 
     // Done.
-	//fragColor = vec4(min(col, 1.), 1.);
-    float colx = bumpFunc(uv);
-	fragColor = vec4( colx, colx, colx, 1.);
+    float colr = bumpFunc(uv + .005 );
+    float colg = bumpFunc(uv);
+    float colb = bumpFunc(uv - .007);
+	fragColor = vec4( colr, colg, colb, 1.);
 }
