@@ -31,7 +31,19 @@ section {
 
 #hero {
     background: tomato;
+    display: block;
 }
+
+    #hero h1 {
+        width: 5rem;
+        height: 4rem;
+        position: absolute;
+        left: 2rem;
+        top: 2rem;
+        background: transparent url(../img/logo.svg) no-repeat left top;
+        background-size: 100%;
+        text-indent: -20rem;
+    }
 
 #welcome {
     background: gray;
@@ -40,8 +52,6 @@ section {
 #about {
     background: lightsteelblue;
 }
-
-
 
 #contact {
     background: lightsalmon;
