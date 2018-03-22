@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html, body {
+    font-family: 'rubik-regular', Helvetica, Arial;
+}
+
 nav {
     position: fixed;
     top: 2rem;
