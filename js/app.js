@@ -1,7 +1,7 @@
 const canvas = document.querySelector('canvas');
 const img = new Image;
 
-img.src = '../img/loading.png';
+img.src = 'img/loading.png';
 
 img.onload = function() {
     setInterval( () => {
