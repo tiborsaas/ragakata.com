@@ -7,6 +7,10 @@ html, body {
     font-family: 'rubik-regular', Helvetica, Arial;
 }
 
+.hidden {
+    display: none;
+}
+
 nav {
     position: fixed;
     top: 2rem;
@@ -20,6 +24,19 @@ nav ul {
 
 nav ul li a {
     padding: 1rem;
+}
+
+article.loading {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #000;
+    background-size: 75%;
+    background-position: center center;
+    background-blend-mode: screen;
+    z-index: 10;
 }
 
 section {

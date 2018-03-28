@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="fonts/rubik.css">
 </head>
 <body>
+    <article class="loading">
+        <canvas></canvas>
+    </article>
     <main>
         <nav>
             <ul>
@@ -20,7 +23,8 @@
         </nav>
         <section id="hero">
             <h1>RagaKata</h1>
-            <canvas data-fragment-url="shader/test.glsl"></canvas>
+            <canvas data-fragment-url="shader/react-diffuse.glsl"></canvas>
+            <img src="img/1.jpg" alt="" class="hidden">
         </section>
 
         <section id="welcome">
@@ -35,7 +39,7 @@
             <h1>Contact</h1>
         </section>
     </main>
-    <script src="js/glslcanvas.min.js"></script>
+    <script src="js/glitch.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
