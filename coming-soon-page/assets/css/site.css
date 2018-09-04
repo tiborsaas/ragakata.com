@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background: #232735;
+    height: 100%;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* decorator lines */
+
+body:before {
+    position: absolute;
+    left: 18%;
+    top: 0;
+    bottom: 0;
+    width: 6rem;
+    z-index: 1;
+    display: block;
+    content: '';
+    background: linear-gradient(90deg, black, transparent);
+    opacity: .2;
+}
+
+body:after {
+    position: absolute;
+    left: 60%;
+    top: 0;
+    bottom: 0;
+    width: 6rem;
+    z-index: 2;
+    display: block;
+    content: '';
+    background: linear-gradient(90deg, black, transparent);
+    opacity: .4;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+main:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: block;
+    content: '';
+    background: transparent url(../images/giphy.gif) repeat center center;
+    mix-blend-mode: multiply;
+    opacity: 0.314;
+}
+
+/* footer decorator */
+main:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    background: #5242ed;
+    height: 4rem;
+    z-index: 0;
+    display: block;
+    content: '';
+}
+
+section {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    width: 23rem;
+    margin-top: -4rem;
+}
+
+/* logo */
+section h1 {
+    background: transparent url(../images/ragakata_logo.svg) no-repeat center center;
+    width: 4rem;
+    height: 4rem;
+    margin: auto;
+    overflow: hidden;
+    text-indent: -100%;
+    background-size: contain;
+    margin-bottom: 4rem;
+}
+
+/* main text */
+section h2 {
+    font-size: 5rem;
+    font-family: 'Rubik';
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 3.7rem;
+    margin-bottom: 1rem;
+}
+
+    section h2 span {
+        display: block;
+        color: #5242ed;
+        font-size: 3rem;
+        letter-spacing: 2px;
+    }
+
+    section p {
+        font-size: 0.90rem;
+        line-height: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+/* icons in the footer */
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 4rem;
+    z-index: 2;
+    text-align: right;
+    padding-top: .75rem;
+    padding-right: 1rem;
+}
+
+footer a {
+    position: relative;
+    z-index: 10;
+    width: 3rem;
+    height: 2.3rem;
+    display: inline-block;
+}
+
+footer a:hover {
+    position: relative;
+    z-index: 10;
+    filter: invert(1);
+}
+
+.mail {
+    background: transparent url(../icons/email_icon.svg) no-repeat center center;
+    background-size: contain;
+}
+
+.behance {
+    background: transparent url(../icons/behance_icon.svg) no-repeat center center;
+    background-size: contain;
+}
+
+.dribble {
+    background: transparent url(../icons/dribbble_icon.svg) no-repeat center center;
+    background-size: contain;
+}
+
+.linkedin {
+    background: transparent url(../icons/linkedin_icon.svg) no-repeat center center;
+    background-size: contain;
+}
+
+/* media queries */
+
+@media (max-width: 492px) {
+    main:after {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 40%;
+    }
+
+    footer {
+        width: 60%;
+    }
+}
+
+@media (max-width: 397px) {
+    main:after {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 20%;
+    }
+
+    footer {
+        width: 80%;
+    }
+}
+
+@media (max-width: 361px) {
+    section h2 {
+        font-size: 19vw;
+    }
+
+    section h2 span {
+        display: block;
+        color: #5242ed;
+        font-size: 11vw;
+    }
+}
